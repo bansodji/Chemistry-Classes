@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import "./variables";
+@import "./fonts";
+@import "./color";
+@import "./buttons";
+@import "./spaces";
+@import "./images";
+@import "./navbar";
+@import "./card";
+@import "./footer";
+@import "./manvi";
+@import "./apeksha";
+
+body {
+    background-color: $body;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        color: inherit;
+    }
+}
+
+.active {
+    color: $theme-1 !important;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/hero.jpg');
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.achievement-wraper {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/achievement.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
